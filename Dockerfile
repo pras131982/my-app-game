@@ -1,8 +1,7 @@
 FROM mhart/alpine-node:7.10.1
 
-WORKDIR MY-APP-GAME/src
+WORKDIR my-app-game/src
 ADD . .
-RUN npm install
+RUN npm start 
 
-EXPOSE 6004
 CMD ["node","index.js"]
